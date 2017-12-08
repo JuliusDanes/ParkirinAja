@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ParkirinAja</title>
+	<link rel="icon" type="image/icon" href="Images/icon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="action.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+</head>
+
+<body onload="mapload()">
+
+<div class="maps">
+	<p id = 'mapdiv' onclick="geoloc()"></p>
+	<iframe id="mapload" src="#" width="1020" height="660" frameborder="1000" style="border:10" allowfullscreen></iframe>
+</div>
+
+<div class="list">
+	<div class="boxes" id="MyLocation">
+		<div class="headbox" id="myloc" onclick="geoloc()">My Location</div>
+	</div>
+	
+	<div class="boxes" id="ParkirResmi">
+		<div class="headbox" id="pares" onclick="mapspot(this.id)">Parkir Resmi</div>
+		<div class="bodybox" id="c_pares">
+			<div class="box" id="wil">
+			    <h1 id="jdl">Wilayah</h1>
+				<div class="subbox" id="dki">DKI Jakarta
+				<h2 id="value">16</h2>
+				</div>
+				<div class="subbox" id="jp">Jakarta Pusat
+				<h2 id="value">6</h2></div>
+				<div class="subbox" id="ju">Jakarta Utara
+				<h2 id="value">1</h2></div>
+				<div class="subbox" id="jt">Jakarta Timur
+				<h2 id="value">3</h2></div>
+				<div class="subbox" id="js">Jakarta Selatan
+				<h2 id="value">1</h2></div>
+				<div class="subbox" id="jb">Jakarta Barat
+				<h2 id="value">5</h2></div>
+			</div>			
+			<div class="box" id="jns"></div>
+		</div>
+	</div>
+	
+	<div class="boxes" id="ParkirLiar">
+		<div class="headbox" id="parli" onclick="mapspot(this.id)">Parkir Liar</div>
+		<div class="bodybox" id="c_parli">
+		    
+			<div class="box" id="wil">
+			    <h1 id="jdl">Wilayah</h1>
+				<div class="subbox" id="dki">DKI Jakarta
+				<h2 id="value">17</h2>
+				</div>
+				<div class="subbox" id="jp">Jakarta Pusat
+				<h2 id="value">1</h2></div>
+				<div class="subbox" id="ju">Jakarta Utara
+				<h2 id="value">5</h2></div>
+				<div class="subbox" id="jt">Jakarta Timur
+				<h2 id="value">0</h2></div>
+				<div class="subbox" id="js">Jakarta Selatan
+				<h2 id="value">0</h2></div>
+				<div class="subbox" id="jb">Jakarta Barat
+				<h2 id="value">11</h2></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="boxes" id="RuteKRL">
+		<div class="headbox" id="rkrl" onclick="mapspot(this.id)">Rute Commuterline</div>
+		<div class="bodybox" id="c_rkrl">...</div>
+	</div>
+	
+	<div class="boxes" id="RuteTJ">
+		<div class="headbox" id="rtj" onclick="mapspot(this.id)">Rute TransJakarta</div>
+		<div class="bodybox" id="c_rtj">...</div>
+	</div>
+
+</div>
+</body>
+</html>

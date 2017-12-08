@@ -1,0 +1,98 @@
+/*style interface*/
+*{
+	margin: 0px;
+}
+
+#mapdiv {
+	margin: 0;
+	padding: 0;
+	width: 1000px;
+	height: 660px;
+	display: none;
+}
+
+.maps{
+	display: inline-block;
+	width: 75%;
+	height: 100%;
+}
+
+.list{
+    float: right;
+	width: 25%;
+	display: inline-block;
+	background-color: #fafafa;
+	top: 0px;
+    margin-right: 0px;
+}
+
+.boxes{	
+	font-family: Corbel;
+	margin-bottom: 10px;	
+}
+
+.headbox{
+	border-top: solid 1px #A5A5A5;
+	border-bottom: solid 1px #A5A5A5;
+	padding: 5px 0px 5px 10px;	
+	font-size: 14pt;
+}
+
+.bodybox{
+	font-weight: normal;
+	color: #696969;
+	font-size: 11pt;
+	padding-left: 20px;
+	display: none;
+}
+
+.subbox{
+	width: 49.4%;
+    height: 80px;
+	display: block;
+    float: left;
+    text-align: center;
+    font-size: 14pt;
+    background-color: darkgrey;    
+    color: #EBEBEB;
+    border: 1px solid white;
+	font-family: Corbel;
+}
+
+#jdl{
+    text-align: center;
+    font-size: 16pt;
+    color: #033F5F;
+    letter-spacing: -1px;
+}
+
+#value{
+    font-family: calibri;
+    font-size: 26pt;
+    color: #fafafa;
+    padding-top: 1%;
+}
+
+#dki{
+    background-color: #3C3F41;
+}
+
+#jp{
+    background-color: #0288D1;
+}
+
+#ju{
+    background-color: #795548;
+}
+
+#jt{
+    background-color: #0F9D58;
+}
+
+#js{
+    background-color: #9C27B0;
+}
+
+#jb{
+    background-color: #E65100;
+}
